@@ -128,7 +128,7 @@ public class TicTacToe {
     }
 
     // Method to print the board
-    private void printBoard(boolean isInitialPrint) {
+    public void printBoard(boolean isInitialPrint) {
         for (int i = 1; i <= 9; i++) {
             System.out.print(isInitialPrint ? i + " " : board.get(i) + " "); // If initial, print number i
             if (i % 3 == 0) {
